@@ -168,7 +168,6 @@ export default function BlogList() {
     //     return 'tag-other';
     // }
 
-    //Hello
     if (!categoryName) return {};
 
     const normalizedCategory = categoryName.toLowerCase();
