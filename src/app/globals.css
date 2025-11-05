@@ -24,3 +24,201 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-technology {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+}
+
+.tag-lifestyle {
+    background: #D1913C;
+    background: linear-gradient(to bottom, #FFD194, #D1913C);
+    color: #fafafa;
+}
+
+.tag-food{
+    background: #ef473a;
+    background: linear-gradient(to bottom, #cb2d3e, #ef473a);
+    color: #fafafa;
+}
+.tag-sports{
+    background: #78ffd6;
+    background: linear-gradient(to bottom, #a8ff78, #78ffd6);
+    color: #fafafa;
+}
+.tag-other{
+    background: #95a5a6;
+    background: linear-gradient(to bottom, #2c3e50, #95a5a6);
+    color: #fafafa;
+}
+
+.tag-travel {
+  background: linear-gradient(to bottom, #f7971e, #ffd200);
+  color: #fafafa;
+}
+
+.tag-entertainment {
+  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  color: #fafafa;
+}
+
+.tag-health {
+  background: linear-gradient(to bottom, #11998e, #38ef7d);
+  color: #fafafa;
+}
+
+.tag-business {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #fafafa;
+}
+
+.tag-education {
+  background: linear-gradient(to bottom, #00c6ff, #0072ff);
+  color: #fafafa;
+}
+
+.tag-politics {
+  background: linear-gradient(to bottom, #ff416c, #ff4b2b);
+  color: #fafafa;
+}
+
+.tag-science {
+  background: linear-gradient(to bottom, #00bf8f, #001510);
+  color: #fafafa;
+}
+
+.tag-art {
+  background: linear-gradient(to bottom, #ee9ca7, #ffdde1);
+  color: #fafafa;
+}
+
+.tag-music {
+  background: linear-gradient(to bottom, #f953c6, #b91d73);
+  color: #fafafa;
+}
+/* ::selection {
+  background-color: theme('colors.blue.100'); 
+}
+
+::-moz-selection {
+  background-color: theme('colors.blue.100'); 
+}
+
+.ProseMirror-selectedtext {
+  background-color: theme('colors.blue.100'); 
+} */
+
+
+/* Ordered lists (ol) */
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Unordered lists (ul) */
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* List items (for both ol and ul) */
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.625; /* Good line height for readability */
+}
+
+/* Nested lists - different styling for different levels */
+.prose ul ul,
+.prose ol ul {
+  list-style-type: circle;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose ol ol,
+.prose ul ol {
+  list-style-type: lower-alpha;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Extra deep nesting (if needed) */
+.prose ul ul ul {
+  list-style-type: square;
+}
+
+.prose ol ol ol {
+  list-style-type: lower-roman;
+}
+.jarallax {
+  position: relative;
+  z-index: 0;
+  min-height: 520px;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.jarallax-keep-img {
+  position: relative;
+  z-index: 0;
+}
+.jarallax-keep-img > .jarallax-img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: -100;
+}
+.image-zoom img {
+  transition: transform 0.3s ease-out;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.image-zoom {
+  overflow: hidden;
+}
+
+.parallax-section {
+  background-image: url('/images/hero-img.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-hero {
+  background-image: url('/images/hero-img.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
